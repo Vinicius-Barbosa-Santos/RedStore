@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os produtos RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/IMG/logo.png" alt="logo" width="200">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Homem</a></li>
+                    <li><a href="">Mulher</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <img src="/RedStore_Img/images/cart.png" alt="" width="30px">
+            <img src="/RedStore_Img/images/menu.png" class="menu-icon" onClick="menutoggle()">
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produtos</h2>
+            <select>
+                <option>Por classificação</option>
+                <option>Preço barato</option>
+                <option>Popular</option>
+                <option>Mais vendidos</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/IMG/produto1.jpg" alt="">
+                <h4>Chinelos</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>R$49,90</p>
+            </div>
+            <div class="col-4">
+                <img src="/IMG/produto2.jpg" alt="">
+                <h4>Camisas</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>R$ 50,00</p>
+            </div>
+            <div class="col-4">
+                <img src="/IMG/produto3.jpg" alt="">
+                <h4>Moletos</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>R$ 79,00</p>
+            </div>
+            <div class="col-4">
+                <img src="/IMG/produto4.jpg" alt="">
+                <h4>Bota</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>R$ 109,00</p>
+            </div>
+        </div>
+    </div>
+
+<!--------footer---------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Baixe nosso aplicativo</h3>
+                    <p>Baixe o aplicativo para Android e IOS</p>
+                    <div class="app-logo">
+                        <img src="/RedStore_Img/images/play-store.png" alt="">
+                        <img src="/RedStore_Img/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/IMG/logo.png" alt="" width="60">
+                    <p>Venha vericar nosso app e encontre o seu estilo</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Publicação no blog</li>
+                        <li>Política de devolução</li>
+                        <li>Seja afiliado</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Nos siga</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Vinicius Barbosa Santos</p>
+        </div>
+    </div>
+
+<!-- ---------js for toggle menu-------- -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
